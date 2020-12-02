@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-component-communication';
+  title = 'app';
+  childtitle = 'child data';
+
+  parentFunction(data) {
+    console.log(data);
+  }
 }
