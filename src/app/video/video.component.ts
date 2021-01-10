@@ -19,8 +19,8 @@ export class VideoComponent {
   @Output() myEvent = new EventEmitter();
 
   childFunction() {
-    // console.log('I am handled in child');
-    this.myEvent.emit('Hey, I am data from child');
+    console.log('I am handled in child');
+    // this.myEvent.emit('Hey, I am data from child');
   }
   
   @Input()

@@ -1,8 +1,9 @@
-<button>Parent Button</button>
+<button (click)="childappvideo.childFunction()">Parent Button</button>
 <h1>parent</h1>
 
+{{childappvideo.title}}
 
 <hr/>
 <h1>Child Area</h1>
 <!-- <app-video [title]='childtitle'></app-video> -->
-<app-video [setData]='childtitle' (myEvent)='parentFunction($event)'></app-video>
+<app-video #childappvideo [setData]='childtitle'></app-video>
